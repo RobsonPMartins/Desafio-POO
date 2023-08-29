@@ -1,0 +1,33 @@
+Segue abaixo uma sugestão de como o diagrama de classes UML poderia ser estruturado para esse desafio:
+Criado por Robson Pereira Martins
+
++-------------------+          +---------------------+
+| ReprodutorMusical |          | AparelhoTelefonico  |
++-------------------+          +---------------------+
+| - isPlaying: boolean|          | - isCallActive: boolean |
+| - currentMedia: String |     | - isVoiceMailActive: boolean |
+| - playlist: List<String> |    +---------------------+
++-------------------+          | +ligar()              |
+| +tocar()                    | +atender()            |
+| +pausar()                   | +iniciarCorreioVoz() |
+| +selecionarMusica()   |          +---------------------+
++-------------------+    
+
+            |
+            | 
+            |
+            | uses
+
+            |
+            v
+
++------------------+
+| NavegadorInternet|
++------------------+
+| - currentURL: String|
+| - numberOfTabs: int|
++------------------+
+| +exibirPagina()     |
+| +adicionarNovaAba() |
+| +atualizarPagina() |
++------------------+
